@@ -26,6 +26,33 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Throws ReferenceError
-    console.log(functionLet); // Throws ReferenceError
-    console.log(functionConst); // Throws ReferenceError
+    //console.log(functionVar); // Throws ReferenceError
+    //console.log(functionLet); // Throws ReferenceError
+    //console.log(functionConst); // Throws ReferenceError
+
+// Practice
+{
+    let practiceLet = "practice block scoped let"
+    const practiceConst = "practice block scoped const"
+    var practiceVar = "practice block scoped var"
+
+    console.log(practiceLet);
+    console.log(practiceConst);
+    console.log(practiceVar);
+
+    practiceLet = "reassigned let"
+    //practiceConst = "reassigned const" // this one will fail
+    practiceVar = "reassigned var"
+
+    console.log(practiceLet);
+    console.log(practiceConst);
+    console.log(practiceVar);
+}
+
+practiceLet = "reassigned let again"
+practiceConst = "reassigned const again"
+practiceVar = "reassigned var again"
+
+console.log(practiceLet);
+console.log(practiceConst);
+console.log(practiceVar);
