@@ -2,7 +2,7 @@ const colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink', 'red', 'blue
 let cards = shuffle(colors.concat(colors));
 let selectedCards = [];
 let score = 0;
-let timeLeft = 30;
+let timeLeft = 60;
 let gameInterval;
 
 const startbtn = document.getElementById('startbtn');
